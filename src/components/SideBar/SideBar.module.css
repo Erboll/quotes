@@ -1,0 +1,16 @@
+.sidebar {
+    width: 700px;
+}
+
+.quotes , .all {
+    font-size: 34px;
+    text-decoration: none;
+    color: rgb(212, 78, 78);
+    padding-left: 50px;
+   
+}
+
+.sidebar ul {
+    margin-top: 20px;
+}
+

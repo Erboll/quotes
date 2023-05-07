@@ -1,0 +1,35 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #434040;
+    box-shadow: 0px 2px 7px #434040 ;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.logo  {
+    font-size: 52px;
+    text-decoration: none;
+    color: rgb(33, 26, 26);
+    padding: 20px;
+}
+
+.navQuote {
+    font-size: 32px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.navQuote a {
+    text-decoration: none;
+    color:rgb(212, 78, 78);
+}
+
+.quote {
+    padding-right: 38px;
+    border-right: 1px solid #c43a3a;
+}
+
+.navQuote a:nth-child(2) {
+ margin-left: 38px;
+}

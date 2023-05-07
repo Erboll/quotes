@@ -1,0 +1,35 @@
+.quoteDiv {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 20px;
+    width: auto;
+    position: relative;
+}
+
+.quote {
+    font-size: 24px;
+    padding: 5px 250px 5px 8px;
+}
+
+.buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.edit {
+    text-decoration: none;
+    border: 1px solid rgb(24, 24, 24);
+    margin-right: 30px;
+    font-size: 24px;
+    padding: 5px 10px 5px 10px;
+    color: black;
+    border-radius: 4px;
+}
+
+.deleteBtn {
+    padding: 5px 10px 5px 10px;
+    font-size: 22px;
+    border-radius: 4px;
+}
