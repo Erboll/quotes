@@ -21,35 +21,32 @@ export const QuoteForm = ({
 
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    onFormSubmit({
-      ...quote,
-    });
+    onFormSubmit({ ...quote });
   };
 
   const onChange = (
-    e: React.ChangeEvent<
-      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { name, value } = e.target;
+
     setQuote((prev) => ({ ...prev, [name]: value }));
+  };
+  const lowerCase = (str: string) => {
+    return str.replace(/[A-Z]/g, (u) => u.toLowerCase());
   };
   return (
     <div className={styles.form}>
       <h1> {isEdit ? "Edit a quote" : "Submit a quote"} </h1>
       <form onSubmit={onSubmit}>
-        <select
-          className={styles.select}
+        <input
+          type="text"
           name="category"
           value={quote.category}
+          className={styles.select}
           onChange={onChange}
-        >
-          {quotes?.map((q) => (
-            <option key={q.id} value={q.category}>
-              {q.category}
-            </option>
-          ))}
-        </select>
+          placeholder="Enter with small word"
+          pattern={lowerCase(quote.category)}
+        />
         <label className={styles.labelAuthor}>
           {" "}
           Author
